@@ -5,6 +5,11 @@ const studentSchema = new Schema({
     type: String,
     required: true,
   },
+  admissionNumber: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   email: {
     type: String,
     required: true,
@@ -63,6 +68,10 @@ const studentSchema = new Schema({
   passwordUpdated: {
     type: Boolean,
     default: false,
+  },
+  isActive: { 
+    type: Boolean,
+    default: true,
   },
 });
 

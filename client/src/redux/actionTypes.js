@@ -34,3 +34,7 @@ export const DELETE_STUDENT = "DELETE_STUDENT";
 export const DELETE_SUBJECT = "DELETE_SUBJECT";
 export const CREATE_NOTICE = "CREATE_NOTICE";
 export const GET_NOTICE = "GET_NOTICE";
+export const ADD_CERTIFICATE = 'ADD_CERTIFICATE'; // Add this line
+export const UPDATE_CERTIFICATE = 'UPDATE_CERTIFICATE'; // Add this line
+export const DELETE_CERTIFICATE = 'DELETE_CERTIFICATE'; // Add this line
+export const FETCH_CERTIFICATES = 'FETCH_CERTIFICATES'; // Add this line

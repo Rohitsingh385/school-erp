@@ -100,3 +100,14 @@ export const getTestResult = (testResult) =>
   API.post("/api/student/testresult", testResult);
 export const getAttendance = (attendance) =>
   API.post("/api/student/attendance", attendance);
+
+
+// Certificate APIs
+export const getAllCertificates = () => 
+  API.get("/api/certificates"); 
+export const addCertificate = (certificateData) => 
+  API.post("/api/certificates", certificateData); 
+export const updateCertificate = (id, certificateData) => 
+  API.put(`/api/certificates/${id}`, certificateData); 
+export const deleteCertificate = (id) => 
+  API.delete(`/api/certificates/${id}`); 

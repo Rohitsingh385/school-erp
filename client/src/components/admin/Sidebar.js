@@ -7,6 +7,7 @@ import AddIcon from "@mui/icons-material/Add";
 import BoyIcon from "@mui/icons-material/Boy";
 import DeleteIcon from "@mui/icons-material/Delete";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
+import CertificateIcon from '@mui/icons-material/Assignment'; 
 import { useDispatch } from "react-redux";
 import decode from "jwt-decode";
 import { setRef } from "@mui/material";
@@ -188,6 +189,28 @@ const Sidebar = () => {
             }>
             <DeleteIcon className="" />
             <h1 className="font-normal">Delete Subject</h1>
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/admin/certificate" className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}>
+            <CertificateIcon />
+            <h1 className="font-normal">View Certificates</h1>
+          </NavLink>
+          <NavLink to="/admin/certificate/createcertificate" className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}>
+            <AddIcon />
+            <h1 className="font-normal">Create Certificate</h1>
+          </NavLink>
+          <NavLink to="/admin/certificate/updatecertificate" className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}>
+            <AddIcon />
+            <h1 className="font-normal">Update Certificate</h1>
+          </NavLink>
+          <NavLink to="/admin/certificate/deletecertificate" className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}>
+            <DeleteIcon />
+            <h1 className="font-normal">Delete Certificate</h1>
+          </NavLink>
+          <NavLink to="/admin/certificate/reprintcertificate" className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}>
+            <AddIcon />
+            <h1 className="font-normal">Reprint Certificate</h1>
           </NavLink>
         </div>
       </div>

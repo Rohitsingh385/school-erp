@@ -6,6 +6,7 @@ import AddFaculty from "./components/admin/addFaculty/AddFaculty";
 import AddStudent from "./components/admin/addStudent/AddStudent";
 import AddSubject from "./components/admin/addSubject/AddSubject";
 import AdminHome from "./components/admin/AdminHome";
+import Certificate from './components/admin/certificate/Certificate'; 
 
 import GetFaculty from "./components/admin/getFaculty/GetFaculty";
 import GetStudent from "./components/admin/getStudent/GetStudent";
@@ -73,7 +74,8 @@ const App = () => {
       <Route path="/admin/addsubject" element={<AddSubject />} />
       <Route path="/admin/allsubject" element={<GetSubject />} />
       <Route path="/admin/allstudent" element={<GetStudent />} />
-
+      <Route path="/admin/certificate/*" element={<Certificate />} />
+    
       {/* Faculty  */}
 
       <Route path="/login/facultylogin" element={<FacultyLogin />} />
@@ -97,6 +99,8 @@ const App = () => {
       <Route path="/student/subjectlist" element={<SubjectList />} />
       <Route path="/student/testresult" element={<TestResult />} />
       <Route path="/student/attendance" element={<Attendance />} />
+      
+      
     </Routes>
   );
 };
